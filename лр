@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include "math.h"
 using namespace std;
@@ -13,9 +14,8 @@ double diff(double x)
 int main()
 {
     double const eps = 1e-5;
-    double a, b;
-    cout << "Введите пределы поиска:";
-    cin >> a >> b;
+    double a = 0;
+    double b = 2;
     double x=(a+b)/2;
     double dy = diff(x);
     while (fabs(dy) > eps)
@@ -29,3 +29,4 @@ int main()
     }
     cout << x;
 }
+
